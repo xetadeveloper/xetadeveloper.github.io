@@ -1,0 +1,48 @@
+.home-holder {
+  /* border: 1px solid black; */
+  padding: 20px;
+  height: 80vh;
+}
+
+.hero {
+  /* border: 1px solid black; */
+  height: 100%;
+}
+
+.intro-header {
+  font-size: 2em;
+}
+
+.intro-text {
+  font-size: 5em;
+  font-weight: 1000;
+}
+
+@media screen and (max-width: 425px) {
+  .intro-text {
+    font-size: 3em;
+  }
+}
+
+.cta-holder {
+  margin-top: 40px;
+  height: 50px;
+  width: 200px;
+  border: 2px solid #555555;
+}
+
+.cta-holder:hover {
+  background-color: #f75321;
+  border: 2px solid white;
+}
+
+.cta {
+  padding: 5px;
+  height: 100%;
+  width: 100%;
+}
+
+.cta-holder:hover .cta {
+  color: white;
+}
+
