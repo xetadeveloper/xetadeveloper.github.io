@@ -31,7 +31,7 @@ github_username:  xetadeveloper
 
 # My custom jekyll settings
 source: src
-destination: ./src/_site
+destination: docs
 exclude: ['node_modules']
 strict_front_matter: true
 port: 4000
