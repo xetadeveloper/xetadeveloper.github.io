@@ -1,0 +1,124 @@
+.contact-holder {
+  text-align: center;
+  /* border: 1px solid black; */
+}
+
+.header-info {
+  gap: 20px;
+  /* border: 1px solid black; */
+}
+
+.mail-holder {
+  height: 400px;
+  width: 100%;
+  /* border: 1px solid black; */
+  overflow: hidden;
+  width: 100%;
+  padding: 20px;
+  margin-top: 40px 0;
+  display: block;
+  gap: 40px;
+}
+
+@media screen and (max-width:425px) {
+  .mail-holder{
+    margin-top: 20px 0;
+    height: 300px;
+  }
+}
+
+.mail-body {
+  background-color: white;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  box-shadow: 0 0 10px 5px #f75321;
+  transition: all 0.3s ease-in-out;
+}
+
+.mail-body:hover {
+  cursor: pointer;
+  background-color: #f75321;
+  color: white;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 0 5px 8px white;
+}
+
+@media screen and (max-width:425px) {
+  .mail-body{
+    width: 150px;
+    height: 150px;
+  }
+}
+
+.mail-icon {
+  /* border: 1px solid black; */
+  width: 100px;
+  height: 100px;
+  font-size: 6em;
+}
+
+@media screen and (max-width:425px) {
+  .mail-icon{
+    width: 80px;
+    height: 80px;
+  }
+}
+
+.form-container {
+  display: none;
+  width: 80%;
+  max-width: 400px;
+  /* border: 1px solid black; */
+  margin: 30px auto;
+  gap: 40px;
+  background-color: #f75321;
+  border-radius: 8px;
+  padding: 20px;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 425px) {
+  .form-container {
+    gap: 25px;
+  }
+}
+
+.form-group {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  align-items: center;
+}
+
+@media screen and (max-width: 425px) {
+  .form-group {
+    grid-template-columns: 70px 1fr;
+  }
+}
+
+.form-label {
+  color: white;
+}
+
+.form-input {
+  font-family: inherit;
+  padding: 10px;
+  font-size: 1em;
+  border-radius: 8px;
+  border: 1px solid grey;
+  resize: none;
+}
+
+.submit-btn {
+  border-radius: 8px;
+  border: 1px solid grey;
+  height: 40px;
+  background-color: white;
+  box-shadow: 0 0 10px 3px #cfcccc;
+  color: grey;
+}
+
+.submit-btn:hover {
+  background-color: #be370e;
+  color: white;
+}

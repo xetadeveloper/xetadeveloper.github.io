@@ -1,0 +1,18 @@
+/node_modules
+
+#jekyll ignore
+src/sass-cache/
+src/jekyll-cache/
+src/gemfiles/
+Gemfile
+/Gemfile.lock
+src/vendor/bundle/
+src/vendor/cache/
+src/vendor/gems/
+src/vendor/ruby/
+src/_site
+src/.sass-cache
+src/.jekyll-cache
+src/.jekyll-metadata
+src/vendor
+.liquidrc
