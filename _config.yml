@@ -36,7 +36,10 @@ exclude: ['node_modules']
 strict_front_matter: true
 port: 4000
 open_url: true
-url: xetadeveloper.github.io
+
+#gh-pages setup
+domain: xetadeveloper.github.io
+url: https://xetadeveloper.github.io
 baseUrl: /fegoetese
 
 # This is causing error, why??????
