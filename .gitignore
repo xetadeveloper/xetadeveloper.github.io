@@ -13,6 +13,8 @@ docs/.jekyll-cache
 docs/.jekyll-metadata
 docs/vendor
 .liquidrc
+./Gemfile
+./Gemfile.lock
 
 site
 dist
