@@ -29,7 +29,6 @@ destination: site
 exclude: ['node_modules']
 strict_front_matter: true
 port: 4000
-open_url: true
 relative_links:
   collections: true
 

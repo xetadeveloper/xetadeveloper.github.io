@@ -16,7 +16,6 @@
   width: 100%;
   padding: 20px;
   margin-top: 40px 0;
-  display: block;
   gap: 40px;
 }
 
@@ -28,6 +27,7 @@
 }
 
 .mail-body {
+  /* border: 1px solid black; */
   background-color: white;
   width: 200px;
   height: 200px;

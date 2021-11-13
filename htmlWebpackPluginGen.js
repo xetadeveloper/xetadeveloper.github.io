@@ -3,11 +3,11 @@ const fs = require('fs');
 const path = require('path');
 
 // Array of the html webpack plugins
-const htmlPlugins = [];
+let htmlPlugins = [];
 
 const rootPath = path.resolve(__dirname, 'site');
 
-// File path must be an absolute path
+// Specify html files that have chunks (absolute path only)
 const fileChunks = [
   { filepath: path.resolve(rootPath, 'index.html'), chunkNames: ['home'] },
   {
@@ -22,7 +22,21 @@ const fileChunks = [
     filepath: path.resolve(rootPath, 'portfolio/index.html'),
     chunkNames: ['portfolio'],
   },
+  {
+    filepath: path.resolve(rootPath, 'projects'),
+    chunkNames: ['project'],
+  },
 ];
+
+// Specify directories where all the html files have same chunk (absolute path only)
+const dirChunks = [
+  {
+    dirpath: path.resolve(rootPath, 'projects'),
+    chunkNames: ['project'],
+  },
+];
+
+const globalChunks = ['main'];
 
 // This function processes the files and transforms them
 function processFile(dir, filename, chunks) {
@@ -39,13 +53,12 @@ function processFile(dir, filename, chunks) {
 
   // console.log('DirName: ', dirName, '\n\n');
 
-  // console.log('Not Wrapping');
   htmlPlugins.push(
     new HTMLWebpackPlugin({
       template: fullPath.replaceAll('\\', '/'),
       inject: 'body',
       filename: `${dirName ? dirName.replaceAll('\\', '/') : ''}`,
-      chunks,
+      chunks: [...globalChunks, ...chunks],
       minify: false,
     })
   );
@@ -63,20 +76,34 @@ function transform(dir, fileChunks) {
     } else if (file.isFile()) {
       if (regex.test(file.name)) {
         const fullPath = path.resolve(dir, file.name);
+        let jsChunk = [];
 
-        const filteredChunks = fileChunks.filter(
+        // For files that are in a directory that should have one chunk
+        const filteredDirChunks = dirChunks.filter(dirChunk => {
+          return path.dirname(fullPath) === dirChunk.dirpath;
+        });
+
+        // For specific file chunks
+        const filteredFileChunks = fileChunks.filter(
           chunk => fullPath === chunk.filepath
         );
 
-        let jsChunk = [];
-
-        if (filteredChunks.length) {
-          if (filteredChunks.length > 1) {
+        if (filteredDirChunks.length) {
+          if (filteredDirChunks.length > 1) {
             // use the first one
             // Or simply throw an error
           }
 
-          jsChunk = filteredChunks[0].chunkNames;
+          jsChunk.push(...filteredDirChunks[0].chunkNames);
+        }
+
+        if (filteredFileChunks.length) {
+          if (filteredFileChunks.length > 1) {
+            // use the first one
+            // Or simply throw an error
+          }
+
+          jsChunk.push(...filteredFileChunks[0].chunkNames);
         }
 
         // Don't wrap files
@@ -101,4 +128,7 @@ function getHtmlArray() {
 
 module.exports = getHtmlArray;
 
-// console.log('Received Result: ', getHtmlArray());
+// console.log(
+//   'Received Result: ',
+//   getHtmlArray().map(item => item.userOptions.chunks)
+// );

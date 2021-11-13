@@ -12,10 +12,12 @@ layout: default
     {% for project in site.projects %}
     <a href="{{project.url}}" class="flex flex-col app-item">
       <h3 class="app-header">{{project.name}}</h3>
-      {% capture imageName %} ../assets/images/projectImages/{{project.image}}" {% endcapture
-      %} 
-      {% capture imgAltTxt %}{{project.name}} cover picture{% endcapture %}
-      <img src="{{imageName}}" alt="{{imgAltTxt}}" class="app-picture" />
+      <div class="img-holder">
+        {% capture imageName %}
+        ../assets/images/projectImages/{{project.image}}" {% endcapture %} {%
+        capture imgAltTxt %}{{project.name}} cover picture{% endcapture %}
+        <img src="{{imageName}}" alt="{{imgAltTxt}}" class="app-picture" />
+      </div>
       <p>{{project.description}}</p>
     </a>
     {% endfor %}
