@@ -30,8 +30,8 @@ twitter_username: jekyllrb
 github_username:  xetadeveloper
 
 # My custom jekyll settings
-source: src
-destination: docs
+source: docs
+destination: docs/_site
 exclude: ['node_modules']
 strict_front_matter: true
 port: 4000
