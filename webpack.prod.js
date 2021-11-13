@@ -13,7 +13,7 @@ module.exports = merge(webpack_common, {
     filename: '[name].[contenthash].js',
 
     // path to ouptut build folder
-    path: path.resolve(__dirname, './src'),
+    path: path.resolve(__dirname, 'dist'),
   },
 
   plugins: [

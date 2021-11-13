@@ -4,27 +4,27 @@ const htmlWebpackPlugins = require('./htmlWebpackPluginGen');
 module.exports = {
   entry: {
     main: {
-      import: './web/index.mjs',
+      import: './site/index.mjs',
       filename: 'main.js',
     },
     home: {
-      import: './web/js/home.mjs',
+      import: './site/js/home.mjs',
       filename: 'js/home.js',
     },
     contact: {
-      import: './web/js/contact.mjs',
+      import: './site/js/contact.mjs',
       filename: 'js/contact.js',
     },
     portfolio: {
-      import: './web/js/portfolio.js',
+      import: './site/js/portfolio.js',
       filename: 'js/portfolio.js',
     },
     project: {
-      import: './web/js/project.js',
+      import: './site/js/project.js',
       filename: 'js/project.js',
     },
     about: {
-      import: './web/js/about.js',
+      import: './site/js/about.js',
       filename: 'js/about.js',
     },
   },
@@ -41,7 +41,7 @@ module.exports = {
       // For reading HTMl files and requiring their assets e.g img:src
       {
         test: /\.html$/i,
-        loader: 'html-loader',
+        use: [{ loader: 'html-loader', options: { minimize: false } }],
       },
 
       {

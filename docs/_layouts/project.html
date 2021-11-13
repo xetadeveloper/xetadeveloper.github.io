@@ -1,1 +1,15 @@
-<head><link href="../css/project/project.ce32595fc22a207ac33c.css" rel="stylesheet"></head>--- layout: defaultWhite ---<section class="dark-text flex flex-col project-container"><section class="project-header"><h1 class="project-title">{{page.name}}</h1><h5 class="project-desc">{{page.description}}</h5>{% capture pageLink %}https://{{page.link}}{% endcapture %} <a href="{{pageLink}}" target="_blank" class="flex justify-center align-center site-link"><h5>View Site</h5></a></section><section class="project-content">{{content}}</section></section><script defer="defer" src="../js/project.js"></script>
+---
+layout: defaultWhite
+---
+
+<section class="dark-text flex flex-col project-container">
+  <section class="project-header">
+    <h1 class="project-title">{{page.name}}</h1>
+    <h5 class="project-desc">{{page.description}}</h5>
+    {% capture pageLink %}https://{{page.link}}{% endcapture %}
+    <a href="{{pageLink}}" target="_blank" class="flex justify-center align-center site-link">
+      <h5>View Site</h5>
+    </a>
+  </section>
+  <section class="project-content">{{content}}</section>
+</section>

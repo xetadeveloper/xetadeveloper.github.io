@@ -1,1 +1,23 @@
-<head><link href="../css/portfolio/portfolio.a9bbac80b6a4d8c16510.css" rel="stylesheet"></head>--- layout: default ---<section class="portfolio-holder dark-text"><section class="portfolio-header"><h1 class="bold-text">Projects</h1><h5>These are projects I've worked on</h5></section><section class="flex flex-wrap justify-center align-center apps-holder">{% for project in site.projects %} <a href="{{project.url}}" class="flex flex-col app-item"><h3 class="app-header">{{project.name}}</h3>{% capture imageName %} ../assets/images/{{project.image}}" {% endcapture %} {% capture imgAltTxt %}{{project.name}} cover picture{% endcapture %} <img src="{{imageName}}" alt="{{imgAltTxt}}" class="app-picture"/><p>{{project.description}}</p></a>{% endfor %}</section></section><script defer="defer" src="../js/portfolio.js"></script>
+---
+layout: default
+---
+
+<section class="portfolio-holder dark-text">
+  <section class="portfolio-header">
+    <h1 class="bold-text">Projects</h1>
+    <h5>These are projects I've worked on</h5>
+  </section>
+
+  <section class="flex flex-wrap justify-center align-center apps-holder">
+    {% for project in site.projects %}
+    <a href="{{project.url}}" class="flex flex-col app-item">
+      <h3 class="app-header">{{project.name}}</h3>
+      {% capture imageName %} ../assets/images/projectImages/{{project.image}}" {% endcapture
+      %} 
+      {% capture imgAltTxt %}{{project.name}} cover picture{% endcapture %}
+      <img src="{{imageName}}" alt="{{imgAltTxt}}" class="app-picture" />
+      <p>{{project.description}}</p>
+    </a>
+    {% endfor %}
+  </section>
+</section>
