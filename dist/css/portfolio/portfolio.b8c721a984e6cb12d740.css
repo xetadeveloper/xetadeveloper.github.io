@@ -1,0 +1,59 @@
+.portfolio-holder {
+  /* border: 1px solid black; */
+  margin-bottom: 40px;
+}
+
+.portfolio-header {
+  padding: 10px;
+}
+
+.apps-holder {
+  /* border: 1px solid black; */
+  padding: 20px;
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.app-item {
+  /* border: 1px solid black; */
+  width: 300px;
+  height: 300px;
+  border-radius: 5px;
+  box-shadow: 0 0 8px 5px #585858;
+  background-color: #f8f8f8;
+  padding: 10px;
+  gap: 10px;
+  transition: box-shadow 0.5s ease-in-out;
+}
+
+.app-item:hover {
+  color: #3d3c3c;
+  box-shadow: 0 0 8px 8px #f75321;
+  transition: box-shadow 0.5s ease-in-out;
+}
+
+.portfolio-header,
+.app-item {
+  text-align: center;
+}
+
+@media screen and (max-width: 425px) {
+  .app-item {
+    width: 250px;
+    height: 250px;
+  }
+}
+
+.img-holder {
+  flex-grow: 2;
+  /* border: 1px solid black; */
+  overflow: hidden;
+}
+
+.app-picture {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  border: 1px solid grey;
+}
+

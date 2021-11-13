@@ -17,4 +17,4 @@ docs/vendor
 ./Gemfile.lock
 
 site
-dist
+# dist
