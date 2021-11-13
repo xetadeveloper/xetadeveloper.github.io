@@ -1,0 +1,2 @@
+* Move image assets to cloudinary
+* there's a main.css in assets folder, why??

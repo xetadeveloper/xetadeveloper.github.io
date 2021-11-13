@@ -21,7 +21,9 @@
   height: 300px;
   width: 300px;
   border-radius: 50%;
-  border: 1px solid grey;
+  /* border: 1px solid grey; */
+  overflow: hidden;
+  box-shadow: 0 0 15px 8px #f75321;
 }
 
 @media screen and (max-width: 425px) {
@@ -29,6 +31,13 @@
     height: 200px;
     width: 200px;
   }
+}
+
+.profile-pic {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
 }
 
 .details {

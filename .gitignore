@@ -1,4 +1,5 @@
 /node_modules
+/docs
 
 #jekyll ignore
 src/sass-cache/

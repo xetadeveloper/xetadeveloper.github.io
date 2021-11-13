@@ -24,6 +24,17 @@
   }
 }
 
+.dev-info {
+  text-align: center;
+}
+
+.dev-title {
+  margin-bottom: 10px;
+}
+
+.dev-stack {
+}
+
 .cta-holder {
   margin-top: 40px;
   height: 50px;
