@@ -10,7 +10,7 @@ layout: default
 
   <section class="flex flex-wrap justify-center align-center apps-holder">
     {% for project in site.projects %}
-    <a href="{{project.url}}" class="flex flex-col app-item">
+    <a href="{{project.url | relative_url}}" class="flex flex-col app-item">
       <h3 class="app-header">{{project.name}}</h3>
       <div class="img-holder">
         {% capture imageName %}

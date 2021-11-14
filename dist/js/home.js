@@ -1,1 +1,0 @@
-(()=>{"use strict";console.log("In home script")})();

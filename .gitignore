@@ -1,4 +1,6 @@
 /node_modules
+dist
+site
 
 #jekyll ignore
 docs/sass-cache/
@@ -13,8 +15,5 @@ docs/.jekyll-cache
 docs/.jekyll-metadata
 docs/vendor
 .liquidrc
-./Gemfile
-./Gemfile.lock
-
-site
-# dist
+Gemfile
+Gemfile.lock
