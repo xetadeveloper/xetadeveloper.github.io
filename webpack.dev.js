@@ -62,6 +62,7 @@ module.exports = merge(webpack_common, {
     devMiddleware: {
       // for server to respond to requests to the root URL i.e /
       index: true,
+      // writeToDisk: true,
     },
     // open: true,
     // hot: 'only',

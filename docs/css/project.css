@@ -13,6 +13,12 @@ p {
   margin-top: 20px;
 }
 
+@media screen and (max-width: 425px) {
+  .header-text{
+    text-align: center;
+  }
+}
+
 .project-holder {
   /* background-color: white; */
   /* border: 1px solid black; */
@@ -29,8 +35,15 @@ p {
   position: relative;
 }
 
-.tech-stack{
-    gap: 30px;
+@media screen and (max-width: 425px) {
+  .project-header {
+    position: static;
+  }
+}
+
+.tech-stack {
+  gap: 30px;
+  margin-bottom: 30px;
 }
 
 .tech-icon {
@@ -63,6 +76,15 @@ p {
   background-color: #f75321;
   box-shadow: 0 0 2px 3px #d6d6d6;
   color: white;
+}
+
+@media screen and (max-width: 425px) {
+  .site-link{
+    position: static;
+    transform: none;
+    margin-top: 30px;
+    width: 80%;
+  }
 }
 
 .project-content {
