@@ -40,7 +40,7 @@ url: https://xetadeveloper.github.io
 # baseurl: /portfoliosite/site
 
 #prod baseurl (uncomment this when builidng for production)
-baseurl: /myportfolio
+baseurl: /
 
 # This is causing error, why??????
 # livereload: true

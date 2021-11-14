@@ -5,7 +5,6 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    
     "jek-create": "gem install jekyll bundler && jekyll new ./src",
     "wbp-dev-watch": "webpack serve --config webpack.dev.js",
     "wbp-dev": "webpack --config webpack.dev.js",
@@ -15,7 +14,10 @@
     "jek-build": "echo \"Building Jekyll Site.....\" && bundle exec jekyll build",
     "jek-clean": "echo \"Cleaning Site Folder.....\" && jekyll clean",
     "wbp-build": "echo \"Bundling Files.....\" && webpack --config webpack.prod.js && echo \"Bundle Complete.....\"",
-    "build-all": "npm run jek-clean && npm run jek-build && npm run wbp-build"
+    "build-all": "npm run jek-clean && npm run jek-build && npm run wbp-build",
+
+    "push-dev": "cd batchFiles && pushDevEnv.bat",
+    "push-site": "cd batchFiles && pushSite.bat"
   },
   "author": "xeta",
   "license": "ISC",
