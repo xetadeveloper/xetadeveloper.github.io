@@ -17,7 +17,8 @@
     "build-all": "npm run jek-clean && npm run jek-build && npm run wbp-build",
 
     "push-dev": "cd batchFiles && pushDevEnv.bat",
-    "push-site": "cd batchFiles && pushSite.bat"
+    "push-site": "cd batchFiles && pushSite.bat",
+    "push-all" : "npm run push-dev && npm run push-site"
   },
   "author": "xeta",
   "license": "ISC",
