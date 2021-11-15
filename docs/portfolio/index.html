@@ -1,5 +1,6 @@
 ---
 layout: default
+title: Portfolio
 ---
 
 <section class="portfolio-holder dark-text">
@@ -16,7 +17,12 @@ layout: default
         {% capture imageName %}
         ../assets/images/projectImages/{{project.image}}" {% endcapture %} {%
         capture imgAltTxt %}{{project.name}} cover picture{% endcapture %}
-        <img src="{{imageName}}" alt="{{imgAltTxt}}" class="app-picture" />
+        <img
+          src="{{imageName}}"
+          alt="{{imgAltTxt}}"
+          class="app-picture"
+          loading="lazy"
+        />
       </div>
       <p>{{project.description}}</p>
     </a>

@@ -4,6 +4,7 @@ name: JournalMe
 link: journalme.herokuapp.com
 image: journalme.png
 description: A trading journal app made with the MERN stack
+title: JournalMe Project
 ---
 
 {:.header-text}

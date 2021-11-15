@@ -3,9 +3,9 @@
   <nav class="flex justify-between align-center page-container navbar">
     {% assign authorLength = include.author | number_of_words %}
     {%if authorLength > 0 %}
-    <h2 class="logo">{{include.author}}</h2>
+    <a href={{"/" | relative_url}} class="logo">{{include.author}}</a>
     {% else %}
-    <h2 class="logo">Author Name</h2>
+    <a href={{"/" | relative_url}} class="logo">Author Name</a>
     {%endif%}
 
     <ul class="flex nav-list">

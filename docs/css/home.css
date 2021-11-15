@@ -1,3 +1,14 @@
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
 .home-holder {
   /* border: 1px solid black; */
   padding: 20px;
@@ -45,6 +56,7 @@
 .cta-holder:hover {
   background-color: #f75321;
   border: 2px solid white;
+  transition: all 0.3s ease-in-out;
 }
 
 .cta {
@@ -55,4 +67,13 @@
 
 .cta-holder:hover .cta {
   color: white;
+}
+
+.hide {
+  opacity: 0;
+}
+
+.show {
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
 }

@@ -4,6 +4,7 @@ name: PicsKeep
 link: picskeep.herokuapp.com
 image: picskeep.png
 description: A picture gallery app made with the MERN stack and AWS S3
+title: PicsKeep Project
 ---
 
 {:.header-text}

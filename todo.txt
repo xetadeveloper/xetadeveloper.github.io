@@ -1,1 +1,4 @@
 * Move image assets to cloudinary
+* do a vendor bundle
+* Add resume 
+* Maybe add page load speed reports to projects

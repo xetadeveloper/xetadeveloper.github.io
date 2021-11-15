@@ -6,7 +6,9 @@ ECHO ========================================
 Title Github Dev Environment Site Push
 
 ECHO Adding dev files to staging area......
-git add .
+git status
+git add -A
+git status
 
 ECHO Committing files to local repo......
 git commit

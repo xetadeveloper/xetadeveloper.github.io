@@ -1,5 +1,6 @@
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const htmlWebpackPlugins = require('./htmlWebpackPluginGen');
+const path = require('path');
 
 module.exports = {
   entry: {
@@ -35,6 +36,10 @@ module.exports = {
     new CleanWebpackPlugin(),
     ...htmlWebpackPlugins(),
   ],
+
+  resolve: {
+    roots: [path.resolve(__dirname, 'site')],
+  },
 
   module: {
     rules: [

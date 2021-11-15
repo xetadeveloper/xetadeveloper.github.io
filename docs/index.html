@@ -1,18 +1,20 @@
 ---
 layout: default
+title: Fego Etese
 ---
 
 <!-- Home page -->
 <section class="dark-text home-holder">
   <section class="flex flex-col justify-center align-center hero">
     <!-- This text will fade in -->
-    <h2 class="intro-header">Hi!</h2>
-    <h1 class="intro-text">I'm {{page.author}}</h1>
+    <h2 class="intro-header hide">Hi!</h2>
+    <h1 class="intro-text hide">I'm {{page.author}}</h1>
     <div class="dev-info">
-      <h3 class="bold-text dev-title">Web Developer</h3>
-      <h5 class="dev-stack">MongoDB | React | NodeJS | ExpressJS | Java SE</h5>
+      <h3 class="bold-text dev-title hide">Web Developer</h3>
+      <h5 class="bold-text intro-stack hide">My Stack</h5>
+      <h5 class="dev-stack hide">MongoDB | React | NodeJS | ExpressJS | Java SE</h5>
     </div>
-    <section class="cta-holder">
+    <section class="cta-holder hide">
       <a href={{"/portfolio" | relative_url}} class="flex justify-center align-center cta"
         >Check My Work</a
       >

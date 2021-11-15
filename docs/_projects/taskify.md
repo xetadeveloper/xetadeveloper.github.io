@@ -4,6 +4,7 @@ name: TaskifyApp
 link: taskifyapp.herokuapp.com
 image: taskifyApp.png
 description: A to-do list app made with the MERN stack
+title: Taskify Project
 ---
 
 {:.header-text}

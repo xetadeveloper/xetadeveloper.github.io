@@ -16,6 +16,12 @@ module.exports = merge(webpack_common, {
     path: path.resolve(__dirname, 'dist'),
   },
 
+  optimization: {
+    splitChunks: {
+      chunks: 'all',
+    },
+  },
+
   plugins: [
     new MiniCSSExtractPlugin({
       // Using a function instead of string, we can create folders for the css files based on the chunk names
