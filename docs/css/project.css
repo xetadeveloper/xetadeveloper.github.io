@@ -14,7 +14,7 @@ p {
 }
 
 @media screen and (max-width: 425px) {
-  .header-text{
+  .header-text {
     text-align: center;
   }
 }
@@ -60,9 +60,9 @@ p {
 .project-desc {
 }
 
-.site-link {
+.site-link,
+.repo-link {
   position: absolute;
-  right: 0;
   top: 60%;
   transform: translateY(-50%);
   background-color: white;
@@ -72,14 +72,24 @@ p {
   box-shadow: 0 0 2px 3px #bebebe;
 }
 
-.site-link:hover {
+.site-link:hover,
+.repo-link:hover {
   background-color: #f75321;
   box-shadow: 0 0 2px 3px #d6d6d6;
   color: white;
 }
 
+.site-link {
+  right: 0;
+}
+
+.repo-link {
+  left: 0;
+}
+
 @media screen and (max-width: 425px) {
-  .site-link{
+  .site-link,
+  .repo-link {
     position: static;
     transform: none;
     margin-top: 30px;

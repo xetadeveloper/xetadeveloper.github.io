@@ -2,6 +2,7 @@
 layout: project
 name: JournalMe
 link: journalme.herokuapp.com
+repo: github.com/xetadeveloper/journalme
 image: journalme.png
 description: A trading journal app made with the MERN stack
 title: JournalMe Project

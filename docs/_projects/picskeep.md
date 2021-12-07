@@ -3,6 +3,7 @@ layout: project
 name: PicsKeep
 link: picskeep.herokuapp.com
 image: picskeep.png
+repo: github.com/xetadeveloper/picskeep
 description: A picture gallery app made with the MERN stack and AWS S3
 title: PicsKeep Project
 ---
